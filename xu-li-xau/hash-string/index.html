@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hash String - nhphucqt</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/syntax-highlight.css">
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+        <link rel="alternate icon" href="/assets/images/favicon.png">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <nav>
+    <div class="logo-block">
+        <a href="/" class="logo-text"><img src="/assets/images/logo.png" width="40" class="logo"><span style="margin-left:10px">nhphucqt</span></a>
+    </div>
+    <div class="nav-block">
+        
+            <a class="nav-text " href="/">Home</a>
+        
+            <a class="nav-text " href="/cool-websites.html">Cool Websites</a>
+        
+    </div>
+</nav>
+        <div class="content-parent">
+            <div class="content">
+                <h1>Hash String</h1>
+
+<div class="table-of-contents">
+  <ul>
+    <li><a href="#hash-mot-khoa">Hash một khóa</a></li>
+    <li><a href="#hash-nhieu-khoa">Hash nhiều khóa</a></li>
+  </ul>
+</div>
+
+<h2 id="hash-mot-khoa">Hash một khóa</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">Hash</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">MOD</span> <span class="o">=</span> <span class="mf">1e9</span><span class="o">+</span><span class="mi">7</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">BASE</span> <span class="o">=</span> <span class="mi">311</span><span class="p">;</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span> <span class="kt">long</span><span class="o">&gt;</span> <span class="n">h</span><span class="p">,</span> <span class="n">p</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="n">init</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+        <span class="n">h</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+        <span class="n">p</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BASE</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">;</span>
+            <span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BASE</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">getHash</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">l</span><span class="o">++</span><span class="p">;</span> <span class="n">r</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">-</span> <span class="n">h</span><span class="p">[</span><span class="n">l</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">p</span><span class="p">[</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">MOD</span><span class="o">*</span><span class="n">MOD</span><span class="p">)</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Độ phức tạp:
+    <ul>
+      <li>Tiền xử lí: \(O(N)\)</li>
+      <li>So sánh xâu: \(O(1)\)</li>
+    </ul>
+  </li>
+  <li><strong>Nhận xét:</strong> tốc độ chạy nhanh, có thể đưa ra kết quả sai (vì có mod), để tăng độ chính xác có thể thêm nhiều khóa.</li>
+</ul>
+
+<h2 id="hash-nhieu-khoa">Hash nhiều khóa</h2>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">NUMMOD</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">MOD</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{(</span><span class="kt">int</span><span class="p">)</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">2277</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">5277</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">8277</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">9277</span><span class="p">};</span>
+<span class="k">const</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">BASE</span> <span class="o">=</span> <span class="mi">311</span><span class="p">;</span>
+
+<span class="k">struct</span> <span class="nc">Hash</span> <span class="p">{</span>
+   <span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span> <span class="kt">long</span><span class="o">&gt;</span> <span class="n">h</span><span class="p">[</span><span class="n">NUMMOD</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="n">NUMMOD</span><span class="p">];</span>
+   <span class="kt">void</span> <span class="n">init</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+       <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+       <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">NUMMOD</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">resize</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+           <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">resize</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+           <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+           <span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+           <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
+               <span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BASE</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+               <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BASE</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+           <span class="p">}</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+   <span class="kt">int</span> <span class="n">getHashWithMod</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">l</span><span class="o">++</span><span class="p">;</span> <span class="n">r</span><span class="o">++</span><span class="p">;</span>
+       <span class="k">return</span> <span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">r</span><span class="p">]</span> <span class="o">-</span> <span class="n">h</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">l</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">MOD</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">MOD</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+   <span class="p">}</span>
+   <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">getHash</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">gh</span><span class="p">;</span>
+       <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">NUMMOD</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">gh</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">getHashWithMod</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">i</span><span class="p">));</span>
+       <span class="p">}</span>
+       <span class="k">return</span> <span class="n">gh</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong>Nhận xét:</strong> có thể tùy chỉnh số lượng khóa (1 đến 4 khóa), có thể đặt giá trị <code class="language-plaintext highlighter-rouge">BASE</code> ngẫu nhiên để chống hack, bù lại tốc độ chạy sẽ chậm hơn cách <a href="#hash-mot-khoa"><strong>Hash một khóa</strong></a>.</li>
+</ul>
+
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/nhphucqt" style="float:right;">Github</a>
+        </footer>
+
+        <script src="/assets/js/clipboard.js"></script>
+    </body>
+    </footer>
+</html>

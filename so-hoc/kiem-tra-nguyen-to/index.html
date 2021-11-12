@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kiểm tra nguyên tố - nhphucqt</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/syntax-highlight.css">
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+        <link rel="alternate icon" href="/assets/images/favicon.png">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <nav>
+    <div class="logo-block">
+        <a href="/" class="logo-text"><img src="/assets/images/logo.png" width="40" class="logo"><span style="margin-left:10px">nhphucqt</span></a>
+    </div>
+    <div class="nav-block">
+        
+            <a class="nav-text " href="/">Home</a>
+        
+            <a class="nav-text " href="/cool-websites.html">Cool Websites</a>
+        
+    </div>
+</nav>
+        <div class="content-parent">
+            <div class="content">
+                <h1>Kiểm tra nguyên tố</h1>
+
+<div class="table-of-contents">
+  <ul>
+    <li><a href="#co-ban">\(O(N)\) - cơ bản</a></li>
+    <li><a href="#toi-uu">\(O(\sqrt{N})\) - Tối ưu</a></li>
+    <li><a href="#miller">\(O(Klog(N)) / O(Klog(N)^2)\) - Miller</a></li>
+  </ul>
+</div>
+
+<h2 id="co-ban">\(O(N)\) - Cơ bản</h2>
+<p>Để kiểm tra một số n có phải là số nguyên tố hay không, ta có thể duyệt \(i\) từ \(2\) đến \(n-1\):</p>
+<ul>
+  <li>Nếu tồn tại \(i\) sao cho \(n\) chia hết cho \(i\) thì \(n\) có nhiều hơn \(2\) ước dương \(\Rightarrow\) \(n\) không phải là số nguyên tố.</li>
+  <li>Nếu không tồn tại thì n chỉ có 2 ước dương là 1 và n \(\Rightarrow\) n là số nguyên tố.
+<strong>Lưu ý:</strong> các số nhỏ hơn 2 không phải là hợp số cũng không phải là số nguyên tố.</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="toi-uu">\(O(\sqrt{N})\) - Tối ưu</h2>
+<p>Có thể dễ dàng chứng minh được một hợp số \(n\) luôn có ước dương khác \(1\) nhỏ hơn hoặc bằng \(\sqrt{n}\).
+Từ đó, ta chỉ cần duyệt \(i\) từ \(2\) đến \(\sqrt{n}\):</p>
+<ul>
+  <li>Nếu tồn tại \(i\) sao cho \(n\) chia hết cho \(i\) thì \(n\) là hợp số.</li>
+  <li>Nếu không tồn tại thì \(n\) là số nguyên tố.
+Tất nhiên, nếu \(n &lt; 2\) thì \(n\) không phải là số nguyên tố.</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Một thuật toán tốt hơn:</strong>
+Để tối ưu thêm thuật toán trên thì đầu tiên ta kiểm tra:</p>
+<ul>
+  <li>Nếu \(n &lt; 2\) thì \(n\) không phải là số nguyên tố.</li>
+  <li>Nếu \(n \geq 2\) và \(n &lt; 4\) thì \(n\) là số nguyên tố.</li>
+  <li>Nếu \(n \geq 4\) và \(n\) chia hết cho \(2\) hoặc \(3\) thì \(n\) không phải là số nguyên tố.
+Nếu \(n\) không nằm trong các trường hợp trên thì khi đó chỉ cần kiểm tra xem \(n\) có chia hết cho các số từ \(2\) đến \(\sqrt{n}\) có dạng \(6k+1\) hoặc \(6k+5\) (hay \(6k-1\)) hay không (không cần kiểm tra các số có dạng \(6k\), \(6k+2\), \(6k+3\), \(6k+4\) vì \(n\) không chia hết cho \(2\) và \(3\)).
+Trong \(6\) số liên tiếp, thay vì kiểm tra \(6\) số chỉ cần kiểm tra \(2\) số trong đó nên thời gian xử lí giảm đi \(3\) lần.</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+=</span><span class="mi">6</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="miller">\(O(Klog(N)) / O(Klog(N)^2)\) - Miller</h2>
+<p>Ta có thể dùng thuật toán Miller để kiểm tra các số nguyên tố 64bit với độ phức tạp nhỏ.</p>
+
+<p>Code ở <a href="/so-hoc/miller"><strong>đây</strong></a></p>
+
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/nhphucqt" style="float:right;">Github</a>
+        </footer>
+
+        <script src="/assets/js/clipboard.js"></script>
+    </body>
+    </footer>
+</html>
