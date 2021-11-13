@@ -56,12 +56,22 @@ nav {
     color: white;
 }
 .content-parent {
+    // background-color: wheat;
     min-height: calc(100% - 100px);
-    display: flex;
+    display: block;
     justify-content: center;
     font-family: sans-serif;
 }
+.search-bar {
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    margin-top: 10px;
+    max-width: 1100px;
+}
 .content {
+    // background-color: aliceblue;
     width: 100%;
     max-width: 1100px;
     line-height: 1.5;
@@ -103,12 +113,6 @@ div.highlight button:active:before {
 }
 .post-link { 
     text-decoration: none;
-}
-hr.style-six {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .spoiler {
     background-color: whitesmoke;
