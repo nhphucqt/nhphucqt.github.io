@@ -56,14 +56,13 @@ nav {
     color: white;
 }
 .content-parent {
-    // background-color: wheat;
     min-height: calc(100% - 100px);
     display: block;
     justify-content: center;
     font-family: sans-serif;
 }
 .search-bar {
-    width: 80%;
+    width: 50%;
     padding: 5px;
     border-radius: 5px;
     border: 2px solid #eee;
@@ -71,7 +70,6 @@ nav {
     max-width: 1100px;
 }
 .content {
-    // background-color: aliceblue;
     width: 100%;
     max-width: 1100px;
     line-height: 1.5;
