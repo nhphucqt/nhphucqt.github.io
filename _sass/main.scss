@@ -97,6 +97,12 @@ div.highlight button:before {
 div.highlight button:active:before {
     content: "Copied!";
 }
+pre.highlight {
+    overflow-y: scroll;
+}
+pre.highlight::-webkit-scrollbar {
+    height: 5px;
+}
 .table-of-contents {
     background-color: whitesmoke;
     padding: 5px;
