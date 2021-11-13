@@ -1,0 +1,4 @@
+- name: Home
+  link: /
+- name: Cool Websites
+  link: /cool-websites.html

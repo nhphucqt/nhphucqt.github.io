@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      permalink: /:categories/:title/
+      layout: "post"

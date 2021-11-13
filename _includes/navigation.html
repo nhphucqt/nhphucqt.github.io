@@ -1,0 +1,10 @@
+<nav>
+    <div class="logo-block">
+        <a href="/" class="logo-text"><img src="/assets/images/logo.png" width="40" class="logo"><span style="margin-left:10px">nhphucqt</span></a>
+    </div>
+    <div class="nav-block">
+        {% for nav in site.data.navigation %}
+            <a class="nav-text {% if page.url == nav.link %}active-nav-text{% endif %}" href="{{ nav.link }}">{{ nav.name }}</a>
+        {% endfor %}
+    </div>
+</nav>

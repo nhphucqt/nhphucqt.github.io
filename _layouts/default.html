@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}{% if page.url != "/" %} - nhphucqt{% endif %}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/syntax-highlight.css">
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+        <link rel="alternate icon" href="/assets/images/favicon.png">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        {% include navigation.html %}
+        <div class="content-parent">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/nhphucqt" style="float:right;">Github</a>
+        </footer>
+
+        <script src="/assets/js/clipboard.js"></script>
+    </body>
+    </footer>
+</html>
