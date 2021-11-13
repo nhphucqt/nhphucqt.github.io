@@ -16,20 +16,16 @@
     </head>
     <body>
         {% include navigation.html %}
-
-        <script async src="https://cse.google.com/cse.js?cx=7283c719540a549bd">
-        </script>
-        <div class="gcse-search"></div>
-
         <div class="content-parent">
-            <div class="content">
+            {% include search-bar.html %}        
+            <div id="content" class="content center">
                 {{ content }}
             </div>
         </div>
         <footer>
             <a href="https://github.com/nhphucqt" style="float:right;">Github</a>
         </footer>
-
+        
         <script src="/assets/js/clipboard.js"></script>
     </body>
     </footer>
