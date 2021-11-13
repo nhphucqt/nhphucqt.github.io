@@ -1,7 +1,7 @@
 (function() {
     function displaySearchResults(results, store) {
       var searchResults = document.getElementById('content');
-      var appendString = '<h1>Show search for "' + searchTerm + '":</h1><hr class="style-three">';
+      var appendString = '<h1>Search results for "' + searchTerm + '":</h1><hr class="style-three">';
       if (results.length) { // Are there any results?
         for (var i = 0; i < results.length; i++) {  // Iterate over the results
           var item = store[results[i].ref];
