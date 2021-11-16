@@ -56,10 +56,10 @@ nav {
     color: white;
 }
 .content-parent {
+    width: 100%;
     min-height: calc(100% - 100px);
-    display: block;
-    justify-content: center;
     font-family: sans-serif;
+    overflow-y: scroll;
 }
 .search-bar {
     width: 50%;
