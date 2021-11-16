@@ -119,10 +119,12 @@ void sieve() {
 * **Cải tiến thuật toán:**
 
 Để tính số lượng ước của một số $$n$$, ta làm như sau:
-* Phân tích $$n$$ ra thừa số nguyên tố: $$n = {x_1}^{y_1} \times {x_2}^{y_2} \times {x_3}^{y_3} \times \ldots \times {x_k}^{y_k}$$, trong đó $$x_i$$ là thừa số nguyên tố của $$n$$, $$y_i$$ là số mũ của $$x_i$$ $$(1 \le i \le k)$$
+* Phân tích $$n$$ ra thừa số nguyên tố: $$n = {x_1}^{y_1} \times {x_2}^{y_2} \times \ldots \times {x_k}^{y_k}$$, trong đó $$x_i$$ là thừa số nguyên tố của $$n$$, $$y_i$$ là số mũ của $$x_i$$ $$(1 \le i \le k)$$
 * Sử dụng công thức tính số lượng ước dựa vào số mũ của các thừa số nguyên tố:
 
-$$numDiv(n) = (y_1+1) \times (y_2+1) \times (y_3+1) \times \ldots \times (y_k+1)$$
+<!-- $$numDiv(n) = (y_1+1) \times (y_2+1) \times (y_3+1) \times \ldots \times (y_k+1)$$ -->
+
+$$numDiv(n) = \prod_{i=1}^{k} (y_i+1)$$
 
 ```cpp
 const int N = 1e7+7;
@@ -174,9 +176,11 @@ void sieve() {
 * Phân tích $$n$$ ra thừa số nguyên tố, đặt $$n = {x_1}^{y_1} \times {x_2}^{y_2} \times {x_3}^{y_3} \times \ldots \times {x_k}^{y_k}$$ với $$x_i$$ là thừa số nguyên tố của $$n$$, $$y_i$$ là số mũ của $$x_i$$ $$(1 \le i \le k)$$
 * Sử dụng công thức tính tổng ước số của $$n$$:
 
-$$sumDiv(n) = ({x_1}^0 + {x_1}^1 + {x_1}^2 + \ldots + {x_1}^{y_1}) \times ({x_2}^0 + {x_2}^1 + {x_2}^3 + \ldots + {x_2}^{y_2}) \times \ldots \times ({x_k}^0 + {x_k}^1 + {x_k}^2 + \ldots + {x_k}^{y_k})$$
+<!-- $$sumDiv(n) = ({x_1}^0 + {x_1}^1 + {x_1}^2 + \ldots + {x_1}^{y_1}) \times ({x_2}^0 + {x_2}^1 + {x_2}^3 + \ldots + {x_2}^{y_2}) \times \ldots \times ({x_k}^0 + {x_k}^1 + {x_k}^2 + \ldots + {x_k}^{y_k})$$ -->
 
-Ta có thể tính công thức $$x^0 + x^1 + x^2 + \ldots + x^n$$ trong $$O(log(N))$$, xem cách giải tại [**đây**](/problem/bai-toan-tinh-n1-n2-n3-nk-mod/solution/)
+$$sumDiv(n) = \prod_{i=1}^{k} \sum_{j=0}^{y_i} {x_i}^j$$
+
+Ta có thể tính công thức $$\sum_{i=0}^{n} x^i$$ trong $$O(log(N))$$, xem cách giải tại [**đây**](/problem/bai-toan-tinh-n1-n2-n3-nk-mod/solution/)
 
 ```cpp
 const int N = 1e7+7;
@@ -236,9 +240,18 @@ Ngoài thuật toán trên, ta có thể dùng cách phân tích thành thừa s
 * Gọi $$x$$ là số lượng ước của $$n$$
 * Tích ước số của $$n$$ là: $$n^{x/2}$$
 
-$$prodDiv(n) = n^{x/2} \bmod MOD$$ nếu $$n$$ không phải là số chính phương
+<!-- $$prodDiv(n) = n^{x/2} \bmod MOD$$ nếu $$n$$ không phải là số chính phương
 
-$$prodDiv(n) = n^{\lfloor x/2 \rfloor} \times \sqrt{n} \bmod MOD$$ nếu $$n$$ là số chính phương
+$$prodDiv(n) = n^{\lfloor x/2 \rfloor} \times \sqrt{n} \bmod MOD$$ nếu $$n$$ là số chính phương -->
+
+$$
+prodDiv(n) = 
+\begin{cases}
+n^{x/2} \bmod MOD &, n \ne a^2 \\
+n^{\lfloor x/2 \rfloor} \times \sqrt{n} \bmod MOD &, n = a^2
+\end{cases}
+\ \ \ (a \in \mathbb{N})
+$$
 
 Giải thích chi tiết tại [**đây**](./tinh-tich-uoc-so)
 

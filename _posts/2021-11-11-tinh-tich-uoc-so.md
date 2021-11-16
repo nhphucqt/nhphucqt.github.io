@@ -57,7 +57,14 @@ $$
 
 $$\large P = \prod_{i=1}^{k} t_{x_i}$$
 
-$$\large = \left({x_1}^{y_1}\right)^{ \frac{c}{2} } \cdot \left({x_2}^{y_2}\right)^{ \frac{c}{2} } \cdot \left({x_3}^{y_3}\right)^{ \frac{c}{2} } \ldots \left({x_k}^{y_k}\right)^{ \frac{c}{2} } = \left({x_1}^{y_1}{x_2}^{y_2} {x_3}^{y_3} \ldots {x_k}^{y_k}\right)^{ \frac{c}{2} } = n^{ \frac{c}{2} }$$
+$$
+\large 
+\begin{align*}
+&= \left({x_1}^{y_1}\right)^{ \frac{c}{2} } \cdot \left({x_2}^{y_2}\right)^{ \frac{c}{2} } \cdot \left({x_3}^{y_3}\right)^{ \frac{c}{2} } \ldots \left({x_k}^{y_k}\right)^{ \frac{c}{2} } \\
+&= \left({x_1}^{y_1}{x_2}^{y_2} {x_3}^{y_3} \ldots {x_k}^{y_k}\right)^{ \frac{c}{2} } \\
+&= n^{ \frac{c}{2} }
+\end{align*}
+$$
 
 ### Vậy tích ước số của $$n$$ là: $$P = n^{ \frac{c}{2} }$$
 
