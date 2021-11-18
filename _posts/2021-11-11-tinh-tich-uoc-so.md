@@ -2,6 +2,7 @@
 title: Tính tích ước số của một số
 category: subpage
 permalink: /so-hoc/eratosthenes/:title/
+keywords: subpage, trang con, giai thich, giải thích, so hoc, số học, number theory, explanation, tich uoc so, tích ước số, phan tich thua so nguyen to, phân tích thừa số nguyên tố, factorize, factorization
 ---
 
 ## Tính tích ước số của $$n$$:

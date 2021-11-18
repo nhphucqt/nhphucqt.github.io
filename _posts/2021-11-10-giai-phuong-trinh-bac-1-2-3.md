@@ -1,6 +1,7 @@
 ---
 title: Giải phương trình bậc 1, 2, 3
 category: toan
+keywords: toan, toán, math, giai phuong trinh, giải phương trình, so thuc, số thực, float number
 ---
 
 ```cpp

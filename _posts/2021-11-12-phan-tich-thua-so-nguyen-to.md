@@ -1,6 +1,7 @@
 ---
 title: Phân tích N ra thừa số nguyên tố
 category: problem
+keywords: problem, van de, vấn đề, bai toan, bài toán, so hoc, số học, number theory, loi giai, lời giải, solution, phan tich thua so nguyen to, phân tích thừa số nguyên tố, factorize, factorization
 ---
 
 **Bài toán:** Cho một số nguyên dương $$n$$, hãy phân tích $$n$$ ra thừa số nguyên tố

@@ -1,6 +1,7 @@
 ---
 title: Hash String
 category: xu-li-xau
+keywords: xau, xâu, hash, string, bam, băm, he co so, hệ cơ số, base, khoa, khóa, MOD, modulo, thuat toan khong chuan, thuật toán không chuẩn, xac suat sai, xác suất sai, cau truc du lieu, cấu trúc dữ liệu, data structure
 ---
 
 <div class="table-of-contents" markdown="1">

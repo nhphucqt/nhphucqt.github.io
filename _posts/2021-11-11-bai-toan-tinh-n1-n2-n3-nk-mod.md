@@ -1,6 +1,7 @@
 ---
 title: Bài toán tính (n^1 + n^2 + n^3 + ... + n^k) mod MOD
 category: problem
+keywords: problem, van de, vấn đề, bai toan, bài toán, so hoc, số học, number theory, modulo, mod
 ---
 
 ## Bài toán:

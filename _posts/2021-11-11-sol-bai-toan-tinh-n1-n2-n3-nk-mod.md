@@ -2,6 +2,7 @@
 title: Sol tính (1 + n^1 + n^2 + n^3 + ... + n^k) mod MOD
 category: subpage
 permalink: /problem/bai-toan-tinh-n1-n2-n3-nk-mod/solution/
+keywords: subpage, trang con, solution, loi giai, lời giải, so hoc, số học, number theory, Fermat nho, Fermat nhỏ, Fermat's little theorem, modulo, mod, Modular multiplicative inverse, nghich dao modulo, nghịch đảo modulo, chia de tri, chia để trị, divide and conquer
 ---
 
 **Đề bài:** [Bài toán tính (1 + n^1 + n^2 + n^3 + ... + n^k) mod MOD](./..)

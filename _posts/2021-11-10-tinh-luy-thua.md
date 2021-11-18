@@ -1,6 +1,7 @@
 ---
 title: Tính lũy thừa 
 category: so-hoc
+keywords: so hoc, số học, number theory, luy thua, lũy thừa, chia de tri, chia để trị, divide and conquer, khu de quy, khử đệ quy, so lon, số lớn, big number, bignum
 ---
 
 <div class="table-of-contents" markdown="1">

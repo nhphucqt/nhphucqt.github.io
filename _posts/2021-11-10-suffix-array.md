@@ -1,6 +1,7 @@
 ---
 title: Suffix array
 category: xu-li-xau
+keywords: xau, xâu, cau truc du lieu, cấu trúc dữ liệu, data structure, suffix array, mang hau to, mảng hậu tố
 ---
 
 ```cpp

@@ -1,6 +1,7 @@
 ---
 title: Trie string
 category: xu-li-xau
+keywords: xau, xâu, string, cau truc du lieu, cấu trúc dữ liệu, data structure, cay, cây, tree, trie, cay tien to, cây tiền tố, prefix tree, tim kiem da mau, tìm kiếm đa mẫu
 ---
 
 ```cpp

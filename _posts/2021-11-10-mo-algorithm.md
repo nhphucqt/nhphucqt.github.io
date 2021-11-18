@@ -1,6 +1,7 @@
 ---
 title: Mo's algorithm
 category: ki-thuat
+keywords: ki thuat, kĩ thuật, Mo, chia can, chia căn, square root decomposition, sqrt decomposition, offline, sort, sap xep, sắp xếp
 ---
 
 ## [Distinct values queries - CSES](https://cses.fi/problemset/task/1734/)

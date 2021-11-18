@@ -1,6 +1,7 @@
 ---
 title: Tích modulo hai số
 category: so-hoc
+keywords: so hoc, số học, number theory, tich, tích, nhan, nhân, mod, modulo, phep nhan an do, phép nhân ấn độ, kieu du lieu, kiểu dữ liệu, data type, phep nhan tran so, phép nhân tràn số, integer overflow
 ---
 
 <div class="table-of-contents" markdown="1">

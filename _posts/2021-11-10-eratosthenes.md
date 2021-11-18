@@ -1,6 +1,7 @@
 ---
 title: Eratosthenes
 category: so-hoc
+keywords: so hoc, số học, number theory, eratosthenes, sieve, sang nguyen to, sàng nguyên tố, uoc so, ước số, factorize, tong, tổng, tich, tích, sum, product
 ---
 
 <div class="table-of-contents" markdown="1">
