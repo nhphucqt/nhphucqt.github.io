@@ -6,7 +6,7 @@ title: nhphucqt
 {% for category in site.data.categories %}
     {% assign filteredPosts = site.posts | where: 'category', category.id %}
     {% if filteredPosts.size > 0 %}
-        <h2>{{ category.name }}</h2>
+        <h1>{{ category.name }}</h1>
         <ul>
             {% for post in filteredPosts %}
             <li><a href="{{ post.url }}" class="post-link">{{ post.title }}</a></li>
