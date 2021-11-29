@@ -147,6 +147,25 @@ footer a {
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
+.scrolltop-button {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    font-size: 20pt;
+    right: 10px;
+    bottom: 15px;
+    padding: 0;
+    z-index: 1;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 100%;
+    display: none;
+    border: none;
+    color: darkgray;
+}
+.scrolltop-button:hover {
+    color: gray;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
