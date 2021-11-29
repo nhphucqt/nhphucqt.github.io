@@ -148,12 +148,14 @@ footer a {
     font-family: 'Oswald', sans-serif;
 }
 .scrolltop-button {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     height: 30px;
     width: 30px;
     font-size: 20pt;
-    right: 15px;
-    bottom: 40px;
+    bottom: 15px;
+    float: right;
+    right: 10px;
     padding: 0;
     z-index: 1;
     background-color: whitesmoke;
