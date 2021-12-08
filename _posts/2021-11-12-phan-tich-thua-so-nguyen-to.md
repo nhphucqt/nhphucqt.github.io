@@ -32,7 +32,7 @@ keywords: problem, van de, vấn đề, bai toan, bài toán, so hoc, số học
 * Để phân tích $$n$$ ra thừa số nguyên tố ta chia $$n$$ cho ước nguyên tố nhỏ nhất của $$n$$ và cứ lặp lại bước đó cho đến khi $$n = 1$$.
 * Ví dụ:
 
-<img src="/assets/images/phan-tich-thua-so-nguyen-to.png" width="60%" class="center">
+<img src="/assets/images/phan-tich-thua-so-nguyen-to.svg" width="60%" class="center">
 <br>
 
 <details class="spoiler" markdown="1">
