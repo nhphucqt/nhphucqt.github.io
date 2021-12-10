@@ -2,6 +2,8 @@
   id: so-hoc
 - name: Toán
   id: toan
+- name: Hình học
+  id: hinh-hoc
 - name: Kĩ thuật
   id: ki-thuat
 - name: Đồ thị
