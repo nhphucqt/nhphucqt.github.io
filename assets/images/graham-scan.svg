@@ -1,0 +1,2291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="420mm"
+   height="180mm"
+   viewBox="0 0 420 180"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   sodipodi:docname="graham-scan.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="420mm"
+     height="180mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.75187991"
+     inkscape:cx="882.45475"
+     inkscape:cy="482.12486"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip">
+      <rect
+         width="674"
+         height="619"
+         x="0"
+         y="0"
+         id="rect903" />
+    </clipPath>
+    <clipPath
+       id="clip-3">
+      <rect
+         width="673"
+         height="619"
+         x="0"
+         y="0"
+         id="rect1442" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:10"
+       id="rect3268"
+       width="420"
+       height="180"
+       x="5e-07"
+       y="5e-07" />
+    <g
+       transform="matrix(0.26453333,0,0,0.26458335,235.47062,7.4671186)"
+       id="g1114">
+      <g
+         transform="translate(-0.5,619)"
+         fill="none"
+         font-size="10px"
+         font-family="sans-serif"
+         text-anchor="middle"
+         id="g831">
+        <path
+           class="domain"
+           stroke="#000"
+           d="M 0.5,6 V 0.5 h 674 V 6"
+           style="stroke:#000000"
+           id="path763" />
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(30.589286)"
+           id="g769">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line765"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text767">-50</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(90.767857)"
+           id="g775">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line771"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text773">-40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(150.94643)"
+           id="g781">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line777"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text779">-30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(211.125)"
+           id="g787">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line783"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text785">-20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(271.30357)"
+           id="g793">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line789"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text791">-10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(331.48214)"
+           id="g799">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line795"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text797">0</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(391.66071)"
+           id="g805">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line801"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text803">10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(451.83929)"
+           id="g811">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line807"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text809">20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(512.01786)"
+           id="g817">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line813"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text815">30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(572.19643)"
+           id="g823">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line819"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text821">40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(632.375)"
+           id="g829">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line825"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text827">50</text>
+        </g>
+      </g>
+      <g
+         transform="translate(0,-0.5)"
+         fill="none"
+         font-size="10px"
+         font-family="sans-serif"
+         text-anchor="end"
+         id="g901">
+        <path
+           class="domain"
+           stroke="#000"
+           d="M -6,619.5 H 0.5 V 0.5 H -6"
+           style="stroke:#000000"
+           id="path833" />
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,613.43137)"
+           id="g839">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line835"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text837">-50</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,552.7451)"
+           id="g845">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line841"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text843">-40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,492.05882)"
+           id="g851">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line847"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text849">-30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,431.37255)"
+           id="g857">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line853"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text855">-20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,370.68627)"
+           id="g863">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line859"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text861">-10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,310)"
+           id="g869">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line865"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text867">0</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,249.31373)"
+           id="g875">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line871"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text873">10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,188.62745)"
+           id="g881">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line877"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text879">20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,127.94118)"
+           id="g887">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line883"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text885">30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,67.254902)"
+           id="g893">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line889"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text891">40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,6.5686275)"
+           id="g899">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line895"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text897">50</text>
+        </g>
+      </g>
+      <defs
+         id="defs906">
+        <clipPath
+           id="clipPath1195">
+          <rect
+             width="674"
+             height="619"
+             x="0"
+             y="0"
+             id="rect1193" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip)"
+         id="g1110">
+        <polygon
+           points="72.214286,267.01961 156.46429,327.70588 192.57143,339.84314 42.125,151.71569 78.232143,133.5098 349.03571,491.55882 234.69643,333.77451 138.41071,194.19608 120.35714,151.71569 222.66071,297.36275 270.80357,364.11765 102.30357,109.23529 168.5,200.26471 78.232143,42.480392 210.625,248.81373 114.33929,91.029412 186.55357,175.9902 102.30357,18.205882 108.32143,18.205882 294.875,339.84314 312.92857,370.18627 198.58929,115.30392 222.66071,127.44118 180.53571,12.137255 306.91071,279.15686 415.23214,546.17647 258.76786,109.23529 258.76786,97.098039 288.85714,182.05882 282.83929,157.78431 312.92857,103.16667 361.07143,236.67647 330.98214,54.617647 343.01786,115.30392 355.05357,163.85294 373.10714,248.81373 385.14286,200.26471 415.23214,327.70588 403.19643,78.892157 421.25,315.56863 403.19643,18.205882 415.23214,139.57843 415.23214,109.23529 427.26786,84.960784 439.30357,546.17647 463.375,169.92157 469.39286,103.16667 463.375,285.22549 481.42857,72.823529 487.44643,66.754902 469.39286,291.29412 505.5,30.343137 505.5,54.617647 493.46429,224.53922 517.53571,66.754902 523.55357,97.098039 481.42857,370.18627 547.625,18.205882 541.60714,218.47059 559.66071,151.71569 589.75,60.686275 517.53571,351.98039 601.78571,78.892157 631.875,6.0686275 493.46429,443.0098 601.78571,109.23529 475.41071,521.90196 517.53571,430.87255 601.78571,291.29412 625.85714,260.95098 613.82143,303.43137 553.64286,424.80392 481.42857,552.2451 607.80357,418.73529 535.58929,540.10784 565.67857,546.17647 535.58929,606.86275 613.82143,606.86275 439.30357,612.93137 84.25,606.86275 252.75,606.86275 174.51786,600.79412 294.875,600.79412 216.64286,588.65686 198.58929,576.51961 216.64286,576.51961 403.19643,606.86275 409.21429,606.86275 246.73214,552.2451 114.33929,497.62745 132.39286,491.55882 54.160714,424.80392 78.232143,430.87255 102.30357,430.87255 66.196429,400.52941 138.41071,388.39216 156.46429,370.18627 318.94643,503.69608 96.285714,291.29412 "
+           style="fill:none;stroke:#000000;stroke-width:1"
+           id="polygon908" />
+        <circle
+           cx="409.21429"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle910" />
+        <circle
+           cx="601.78571"
+           cy="291.29413"
+           r="3"
+           fill="#000000"
+           id="circle912" />
+        <circle
+           cx="493.46429"
+           cy="224.53922"
+           r="3"
+           fill="#000000"
+           id="circle914" />
+        <circle
+           cx="216.64285"
+           cy="588.65686"
+           r="3"
+           fill="#000000"
+           id="circle916" />
+        <circle
+           cx="294.875"
+           cy="600.79413"
+           r="3"
+           fill="#000000"
+           id="circle918" />
+        <circle
+           cx="385.14285"
+           cy="200.26471"
+           r="3"
+           fill="#000000"
+           id="circle920" />
+        <circle
+           cx="138.41072"
+           cy="388.39215"
+           r="3"
+           fill="#000000"
+           id="circle922" />
+        <circle
+           cx="421.25"
+           cy="315.56863"
+           r="3"
+           fill="#000000"
+           id="circle924" />
+        <circle
+           cx="613.82141"
+           cy="303.43137"
+           r="3"
+           fill="#000000"
+           id="circle926" />
+        <circle
+           cx="168.5"
+           cy="200.26471"
+           r="3"
+           fill="#000000"
+           id="circle928" />
+        <circle
+           cx="42.125"
+           cy="151.71568"
+           r="3"
+           fill="#000000"
+           id="circle930" />
+        <circle
+           cx="282.83929"
+           cy="157.78432"
+           r="3"
+           fill="#000000"
+           id="circle932" />
+        <circle
+           cx="601.78571"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle934" />
+        <circle
+           cx="66.196426"
+           cy="400.52942"
+           r="3"
+           fill="#000000"
+           id="circle936" />
+        <circle
+           cx="114.33929"
+           cy="497.62744"
+           r="3"
+           fill="#000000"
+           id="circle938" />
+        <circle
+           cx="517.53571"
+           cy="430.87256"
+           r="3"
+           fill="#000000"
+           id="circle940" />
+        <circle
+           cx="252.75"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle942" />
+        <circle
+           cx="108.32143"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle944" />
+        <circle
+           cx="403.19644"
+           cy="78.892159"
+           r="3"
+           fill="#000000"
+           id="circle946" />
+        <circle
+           cx="469.39285"
+           cy="103.16666"
+           r="3"
+           fill="#000000"
+           id="circle948" />
+        <circle
+           cx="156.46428"
+           cy="370.18628"
+           r="3"
+           fill="#000000"
+           id="circle950" />
+        <circle
+           cx="565.67859"
+           cy="546.17645"
+           r="3"
+           fill="#000000"
+           id="circle952" />
+        <circle
+           cx="373.10715"
+           cy="248.81372"
+           r="3"
+           fill="#000000"
+           id="circle954" />
+        <circle
+           cx="192.57143"
+           cy="339.84314"
+           r="3"
+           fill="#000000"
+           id="circle956" />
+        <circle
+           cx="288.85715"
+           cy="182.05882"
+           r="3"
+           fill="#000000"
+           id="circle958" />
+        <circle
+           cx="523.55359"
+           cy="97.098038"
+           r="3"
+           fill="#000000"
+           id="circle960" />
+        <circle
+           cx="541.60712"
+           cy="218.47058"
+           r="3"
+           fill="#000000"
+           id="circle962" />
+        <circle
+           cx="505.5"
+           cy="30.343138"
+           r="3"
+           fill="#000000"
+           id="circle964" />
+        <circle
+           cx="481.42856"
+           cy="552.24512"
+           r="3"
+           fill="#000000"
+           id="circle966" />
+        <circle
+           cx="403.19644"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle968" />
+        <circle
+           cx="78.23214"
+           cy="133.50981"
+           r="3"
+           fill="#000000"
+           id="circle970" />
+        <circle
+           cx="312.92856"
+           cy="370.18628"
+           r="3"
+           fill="#000000"
+           id="circle972" />
+        <circle
+           cx="54.160713"
+           cy="424.80392"
+           r="3"
+           fill="#000000"
+           id="circle974" />
+        <circle
+           cx="355.05356"
+           cy="163.85294"
+           r="3"
+           fill="#000000"
+           id="circle976" />
+        <circle
+           cx="535.58929"
+           cy="540.10785"
+           r="3"
+           fill="#000000"
+           id="circle978" />
+        <circle
+           cx="493.46429"
+           cy="443.0098"
+           r="3"
+           fill="#000000"
+           id="circle980" />
+        <circle
+           cx="631.875"
+           cy="6.0686274"
+           r="3"
+           fill="#000000"
+           id="circle982" />
+        <circle
+           cx="102.30357"
+           cy="430.87256"
+           r="3"
+           fill="#000000"
+           id="circle984" />
+        <circle
+           cx="78.23214"
+           cy="42.480392"
+           r="3"
+           fill="#000000"
+           id="circle986" />
+        <circle
+           cx="132.39285"
+           cy="491.55884"
+           r="3"
+           fill="#000000"
+           id="circle988" />
+        <circle
+           cx="246.73215"
+           cy="552.24512"
+           r="3"
+           fill="#000000"
+           id="circle990" />
+        <circle
+           cx="415.23215"
+           cy="546.17645"
+           r="3"
+           fill="#000000"
+           id="circle992" />
+        <circle
+           cx="186.55357"
+           cy="175.99019"
+           r="3"
+           fill="#000000"
+           id="circle994" />
+        <circle
+           cx="198.58928"
+           cy="576.51959"
+           r="3"
+           fill="#000000"
+           id="circle996" />
+        <circle
+           cx="463.375"
+           cy="169.92157"
+           r="3"
+           fill="#000000"
+           id="circle998" />
+        <circle
+           cx="138.41072"
+           cy="388.39215"
+           r="3"
+           fill="#000000"
+           id="circle1000" />
+        <circle
+           cx="613.82141"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1002" />
+        <circle
+           cx="559.66071"
+           cy="151.71568"
+           r="3"
+           fill="#000000"
+           id="circle1004" />
+        <circle
+           cx="535.58929"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1006" />
+        <circle
+           cx="481.42856"
+           cy="370.18628"
+           r="3"
+           fill="#000000"
+           id="circle1008" />
+        <circle
+           cx="589.75"
+           cy="60.686275"
+           r="3"
+           fill="#000000"
+           id="circle1010" />
+        <circle
+           cx="222.66072"
+           cy="127.44118"
+           r="3"
+           fill="#000000"
+           id="circle1012" />
+        <circle
+           cx="553.64288"
+           cy="424.80392"
+           r="3"
+           fill="#000000"
+           id="circle1014" />
+        <circle
+           cx="102.30357"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1016" />
+        <circle
+           cx="222.66072"
+           cy="297.36273"
+           r="3"
+           fill="#000000"
+           id="circle1018" />
+        <circle
+           cx="198.58928"
+           cy="115.30392"
+           r="3"
+           fill="#000000"
+           id="circle1020" />
+        <circle
+           cx="607.80359"
+           cy="418.73529"
+           r="3"
+           fill="#000000"
+           id="circle1022" />
+        <circle
+           cx="475.41071"
+           cy="521.90198"
+           r="3"
+           fill="#000000"
+           id="circle1024" />
+        <circle
+           cx="210.625"
+           cy="248.81372"
+           r="3"
+           fill="#000000"
+           id="circle1026" />
+        <circle
+           cx="439.30356"
+           cy="546.17645"
+           r="3"
+           fill="#000000"
+           id="circle1028" />
+        <circle
+           cx="120.35714"
+           cy="151.71568"
+           r="3"
+           fill="#000000"
+           id="circle1030" />
+        <circle
+           cx="505.5"
+           cy="54.617645"
+           r="3"
+           fill="#000000"
+           id="circle1032" />
+        <circle
+           cx="403.19644"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1034" />
+        <circle
+           cx="487.44644"
+           cy="66.754906"
+           r="3"
+           fill="#000000"
+           id="circle1036" />
+        <circle
+           cx="84.25"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1038" />
+        <circle
+           cx="517.53571"
+           cy="66.754906"
+           r="3"
+           fill="#000000"
+           id="circle1040" />
+        <circle
+           cx="114.33929"
+           cy="91.029411"
+           r="3"
+           fill="#000000"
+           id="circle1042" />
+        <circle
+           cx="439.30356"
+           cy="612.9314"
+           r="3"
+           fill="#000000"
+           id="circle1044" />
+        <circle
+           cx="469.39285"
+           cy="291.29413"
+           r="3"
+           fill="#000000"
+           id="circle1046" />
+        <circle
+           cx="258.76785"
+           cy="97.098038"
+           r="3"
+           fill="#000000"
+           id="circle1048" />
+        <circle
+           cx="318.94644"
+           cy="503.69608"
+           r="3"
+           fill="#000000"
+           id="circle1050" />
+        <circle
+           cx="517.53571"
+           cy="351.98038"
+           r="3"
+           fill="#000000"
+           id="circle1052" />
+        <circle
+           cx="463.375"
+           cy="285.22549"
+           r="3"
+           fill="#000000"
+           id="circle1054" />
+        <circle
+           cx="343.01785"
+           cy="115.30392"
+           r="3"
+           fill="#000000"
+           id="circle1056" />
+        <circle
+           cx="481.42856"
+           cy="72.823532"
+           r="3"
+           fill="#000000"
+           id="circle1058" />
+        <circle
+           cx="415.23215"
+           cy="327.70587"
+           r="3"
+           fill="#000000"
+           id="circle1060" />
+        <circle
+           cx="625.85712"
+           cy="260.95099"
+           r="3"
+           fill="#000000"
+           id="circle1062" />
+        <circle
+           cx="601.78571"
+           cy="78.892159"
+           r="3"
+           fill="#000000"
+           id="circle1064" />
+        <circle
+           cx="312.92856"
+           cy="103.16666"
+           r="3"
+           fill="#000000"
+           id="circle1066" />
+        <circle
+           cx="174.51785"
+           cy="600.79413"
+           r="3"
+           fill="#000000"
+           id="circle1068" />
+        <circle
+           cx="330.98215"
+           cy="54.617645"
+           r="3"
+           fill="#000000"
+           id="circle1070" />
+        <circle
+           cx="258.76785"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1072" />
+        <circle
+           cx="415.23215"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1074" />
+        <circle
+           cx="102.30357"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle1076" />
+        <circle
+           cx="156.46428"
+           cy="327.70587"
+           r="3"
+           fill="#000000"
+           id="circle1078" />
+        <circle
+           cx="349.03571"
+           cy="491.55884"
+           r="3"
+           fill="#000000"
+           id="circle1080" />
+        <circle
+           cx="415.23215"
+           cy="139.57843"
+           r="3"
+           fill="#000000"
+           id="circle1082" />
+        <circle
+           cx="270.80356"
+           cy="364.11765"
+           r="3"
+           fill="#000000"
+           id="circle1084" />
+        <circle
+           cx="294.875"
+           cy="339.84314"
+           r="3"
+           fill="#000000"
+           id="circle1086" />
+        <circle
+           cx="234.69643"
+           cy="333.77451"
+           r="3"
+           fill="#000000"
+           id="circle1088" />
+        <circle
+           cx="180.53572"
+           cy="12.137255"
+           r="3"
+           fill="#000000"
+           id="circle1090" />
+        <circle
+           cx="306.91071"
+           cy="279.15686"
+           r="3"
+           fill="#000000"
+           id="circle1092" />
+        <circle
+           cx="78.23214"
+           cy="430.87256"
+           r="3"
+           fill="#000000"
+           id="circle1094" />
+        <circle
+           cx="361.07144"
+           cy="236.67647"
+           r="3"
+           fill="#000000"
+           id="circle1096" />
+        <circle
+           cx="427.26785"
+           cy="84.960785"
+           r="3"
+           fill="#000000"
+           id="circle1098" />
+        <circle
+           cx="547.625"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle1100" />
+        <circle
+           cx="72.214287"
+           cy="267.01962"
+           r="3"
+           fill="#000000"
+           id="circle1102" />
+        <circle
+           cx="216.64285"
+           cy="576.51959"
+           r="3"
+           fill="#000000"
+           id="circle1104" />
+        <circle
+           cx="96.285713"
+           cy="291.29413"
+           r="3"
+           fill="#000000"
+           id="circle1106" />
+        <circle
+           cx="138.41072"
+           cy="194.19608"
+           r="3"
+           fill="#000000"
+           id="circle1108" />
+      </g>
+      <rect
+         width="674"
+         height="619"
+         style="fill:none"
+         id="rect1112"
+         x="0"
+         y="0" />
+    </g>
+    <g
+       transform="matrix(0.26491226,0,0,0.2645832,11.969831,7.1396146)"
+       id="g1651">
+      <g
+         transform="translate(-0.5,619)"
+         fill="none"
+         font-size="10px"
+         font-family="sans-serif"
+         text-anchor="middle"
+         id="g1370">
+        <path
+           class="domain"
+           stroke="#000"
+           d="M 0.5,6 V 0.5 h 673 V 6"
+           style="stroke:#000000"
+           id="path1302" />
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(24.752252)"
+           id="g1308">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1304"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1306">-50</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(85.382883)"
+           id="g1314">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1310"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1312">-40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(146.01351)"
+           id="g1320">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1316"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1318">-30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(206.64414)"
+           id="g1326">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1322"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1324">-20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(267.27477)"
+           id="g1332">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1328"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1330">-10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(327.90541)"
+           id="g1338">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1334"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1336">0</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(388.53604)"
+           id="g1344">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1340"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1342">10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(449.16667)"
+           id="g1350">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1346"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1348">20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(509.7973)"
+           id="g1356">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1352"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1354">30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(570.42793)"
+           id="g1362">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1358"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1360">40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(631.05856)"
+           id="g1368">
+          <line
+             stroke="#000"
+             y2="6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1364"
+             x1="0"
+             y1="0"
+             x2="0" />
+          <text
+             fill="#000"
+             y="9"
+             dy="0.70999998em"
+             style="fill:#000000"
+             id="text1366">50</text>
+        </g>
+      </g>
+      <g
+         transform="translate(0,-0.5)"
+         fill="none"
+         font-size="10px"
+         font-family="sans-serif"
+         text-anchor="end"
+         id="g1440">
+        <path
+           class="domain"
+           stroke="#000"
+           d="M -6,619.5 H 0.5 V 0.5 H -6"
+           style="stroke:#000000"
+           id="path1372" />
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,613.43137)"
+           id="g1378">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1374"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1376">-50</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,552.7451)"
+           id="g1384">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1380"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1382">-40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,492.05882)"
+           id="g1390">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1386"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1388">-30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,431.37255)"
+           id="g1396">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1392"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1394">-20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,370.68627)"
+           id="g1402">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1398"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1400">-10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,310)"
+           id="g1408">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1404"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1406">0</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,249.31373)"
+           id="g1414">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1410"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1412">10</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,188.62745)"
+           id="g1420">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1416"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1418">20</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,127.94118)"
+           id="g1426">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1422"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1424">30</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,67.254902)"
+           id="g1432">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1428"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1430">40</text>
+        </g>
+        <g
+           class="tick"
+           opacity="1"
+           transform="translate(0,6.5686275)"
+           id="g1438">
+          <line
+             stroke="#000"
+             x2="-6"
+             style="opacity:1;stroke:#000000;stroke-width:1"
+             id="line1434"
+             x1="0"
+             y1="0"
+             y2="0" />
+          <text
+             fill="#000"
+             x="-9"
+             dy="0.31999999em"
+             style="fill:#000000"
+             id="text1436">50</text>
+        </g>
+      </g>
+      <defs
+         id="defs1445">
+        <clipPath
+           id="clipPath1732">
+          <rect
+             width="673"
+             height="619"
+             x="0"
+             y="0"
+             id="rect1730" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip-3)"
+         id="g1647">
+        <circle
+           cx="406.22522"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1447" />
+        <circle
+           cx="600.24323"
+           cy="291.29413"
+           r="3"
+           fill="#000000"
+           id="circle1449" />
+        <circle
+           cx="491.10809"
+           cy="224.53922"
+           r="3"
+           fill="#000000"
+           id="circle1451" />
+        <circle
+           cx="212.20721"
+           cy="588.65686"
+           r="3"
+           fill="#000000"
+           id="circle1453" />
+        <circle
+           cx="291.02704"
+           cy="600.79413"
+           r="3"
+           fill="#000000"
+           id="circle1455" />
+        <circle
+           cx="381.97296"
+           cy="200.26471"
+           r="3"
+           fill="#000000"
+           id="circle1457" />
+        <circle
+           cx="133.38739"
+           cy="388.39215"
+           r="3"
+           fill="#000000"
+           id="circle1459" />
+        <circle
+           cx="418.35135"
+           cy="315.56863"
+           r="3"
+           fill="#000000"
+           id="circle1461" />
+        <circle
+           cx="612.36938"
+           cy="303.43137"
+           r="3"
+           fill="#000000"
+           id="circle1463" />
+        <circle
+           cx="163.7027"
+           cy="200.26471"
+           r="3"
+           fill="#000000"
+           id="circle1465" />
+        <circle
+           cx="36.37838"
+           cy="151.71568"
+           r="3"
+           fill="#000000"
+           id="circle1467" />
+        <circle
+           cx="278.90091"
+           cy="157.78432"
+           r="3"
+           fill="#000000"
+           id="circle1469" />
+        <circle
+           cx="600.24323"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1471" />
+        <circle
+           cx="60.63063"
+           cy="400.52942"
+           r="3"
+           fill="#000000"
+           id="circle1473" />
+        <circle
+           cx="109.13513"
+           cy="497.62744"
+           r="3"
+           fill="#000000"
+           id="circle1475" />
+        <circle
+           cx="515.36035"
+           cy="430.87256"
+           r="3"
+           fill="#000000"
+           id="circle1477" />
+        <circle
+           cx="248.58559"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1479" />
+        <circle
+           cx="103.07207"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle1481" />
+        <circle
+           cx="400.16217"
+           cy="78.892159"
+           r="3"
+           fill="#000000"
+           id="circle1483" />
+        <circle
+           cx="466.85587"
+           cy="103.16666"
+           r="3"
+           fill="#000000"
+           id="circle1485" />
+        <circle
+           cx="151.57658"
+           cy="370.18628"
+           r="3"
+           fill="#000000"
+           id="circle1487" />
+        <circle
+           cx="563.86487"
+           cy="546.17645"
+           r="3"
+           fill="#000000"
+           id="circle1489" />
+        <circle
+           cx="369.84683"
+           cy="248.81372"
+           r="3"
+           fill="#000000"
+           id="circle1491" />
+        <circle
+           cx="187.95496"
+           cy="339.84314"
+           r="3"
+           fill="#000000"
+           id="circle1493" />
+        <circle
+           cx="284.96396"
+           cy="182.05882"
+           r="3"
+           fill="#000000"
+           id="circle1495" />
+        <circle
+           cx="521.4234"
+           cy="97.098038"
+           r="3"
+           fill="#000000"
+           id="circle1497" />
+        <circle
+           cx="539.61261"
+           cy="218.47058"
+           r="3"
+           fill="#000000"
+           id="circle1499" />
+        <circle
+           cx="503.23422"
+           cy="30.343138"
+           r="3"
+           fill="#000000"
+           id="circle1501" />
+        <circle
+           cx="478.98199"
+           cy="552.24512"
+           r="3"
+           fill="#000000"
+           id="circle1503" />
+        <circle
+           cx="400.16217"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle1505" />
+        <circle
+           cx="72.75676"
+           cy="133.50981"
+           r="3"
+           fill="#000000"
+           id="circle1507" />
+        <circle
+           cx="309.21622"
+           cy="370.18628"
+           r="3"
+           fill="#000000"
+           id="circle1509" />
+        <circle
+           cx="48.504505"
+           cy="424.80392"
+           r="3"
+           fill="#000000"
+           id="circle1511" />
+        <circle
+           cx="351.65765"
+           cy="163.85294"
+           r="3"
+           fill="#000000"
+           id="circle1513" />
+        <circle
+           cx="533.54956"
+           cy="540.10785"
+           r="3"
+           fill="#000000"
+           id="circle1515" />
+        <circle
+           cx="491.10809"
+           cy="443.0098"
+           r="3"
+           fill="#000000"
+           id="circle1517" />
+        <circle
+           cx="630.55853"
+           cy="6.0686274"
+           r="3"
+           fill="#000000"
+           id="circle1519" />
+        <circle
+           cx="97.00901"
+           cy="430.87256"
+           r="3"
+           fill="#000000"
+           id="circle1521" />
+        <circle
+           cx="72.75676"
+           cy="42.480392"
+           r="3"
+           fill="#000000"
+           id="circle1523" />
+        <circle
+           cx="127.32433"
+           cy="491.55884"
+           r="3"
+           fill="#000000"
+           id="circle1525" />
+        <circle
+           cx="242.52252"
+           cy="552.24512"
+           r="3"
+           fill="#000000"
+           id="circle1527" />
+        <circle
+           cx="412.2883"
+           cy="546.17645"
+           r="3"
+           fill="#000000"
+           id="circle1529" />
+        <circle
+           cx="181.89189"
+           cy="175.99019"
+           r="3"
+           fill="#000000"
+           id="circle1531" />
+        <circle
+           cx="194.01802"
+           cy="576.51959"
+           r="3"
+           fill="#000000"
+           id="circle1533" />
+        <circle
+           cx="460.79279"
+           cy="169.92157"
+           r="3"
+           fill="#000000"
+           id="circle1535" />
+        <circle
+           cx="133.38739"
+           cy="388.39215"
+           r="3"
+           fill="#000000"
+           id="circle1537" />
+        <circle
+           cx="612.36938"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1539" />
+        <circle
+           cx="557.80182"
+           cy="151.71568"
+           r="3"
+           fill="#000000"
+           id="circle1541" />
+        <circle
+           cx="533.54956"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1543" />
+        <circle
+           cx="478.98199"
+           cy="370.18628"
+           r="3"
+           fill="#000000"
+           id="circle1545" />
+        <circle
+           cx="588.11713"
+           cy="60.686275"
+           r="3"
+           fill="#000000"
+           id="circle1547" />
+        <circle
+           cx="218.27026"
+           cy="127.44118"
+           r="3"
+           fill="#000000"
+           id="circle1549" />
+        <circle
+           cx="551.73871"
+           cy="424.80392"
+           r="3"
+           fill="#000000"
+           id="circle1551" />
+        <circle
+           cx="97.00901"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1553" />
+        <circle
+           cx="218.27026"
+           cy="297.36273"
+           r="3"
+           fill="#000000"
+           id="circle1555" />
+        <circle
+           cx="194.01802"
+           cy="115.30392"
+           r="3"
+           fill="#000000"
+           id="circle1557" />
+        <circle
+           cx="606.30634"
+           cy="418.73529"
+           r="3"
+           fill="#000000"
+           id="circle1559" />
+        <circle
+           cx="472.91891"
+           cy="521.90198"
+           r="3"
+           fill="#000000"
+           id="circle1561" />
+        <circle
+           cx="206.14415"
+           cy="248.81372"
+           r="3"
+           fill="#000000"
+           id="circle1563" />
+        <circle
+           cx="436.54053"
+           cy="546.17645"
+           r="3"
+           fill="#000000"
+           id="circle1565" />
+        <circle
+           cx="115.1982"
+           cy="151.71568"
+           r="3"
+           fill="#000000"
+           id="circle1567" />
+        <circle
+           cx="503.23422"
+           cy="54.617645"
+           r="3"
+           fill="#000000"
+           id="circle1569" />
+        <circle
+           cx="400.16217"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1571" />
+        <circle
+           cx="485.04504"
+           cy="66.754906"
+           r="3"
+           fill="#000000"
+           id="circle1573" />
+        <circle
+           cx="78.819817"
+           cy="606.86273"
+           r="3"
+           fill="#000000"
+           id="circle1575" />
+        <circle
+           cx="515.36035"
+           cy="66.754906"
+           r="3"
+           fill="#000000"
+           id="circle1577" />
+        <circle
+           cx="109.13513"
+           cy="91.029411"
+           r="3"
+           fill="#000000"
+           id="circle1579" />
+        <circle
+           cx="436.54053"
+           cy="612.9314"
+           r="3"
+           fill="#000000"
+           id="circle1581" />
+        <circle
+           cx="466.85587"
+           cy="291.29413"
+           r="3"
+           fill="#000000"
+           id="circle1583" />
+        <circle
+           cx="254.64865"
+           cy="97.098038"
+           r="3"
+           fill="#000000"
+           id="circle1585" />
+        <circle
+           cx="315.27927"
+           cy="503.69608"
+           r="3"
+           fill="#000000"
+           id="circle1587" />
+        <circle
+           cx="515.36035"
+           cy="351.98038"
+           r="3"
+           fill="#000000"
+           id="circle1589" />
+        <circle
+           cx="460.79279"
+           cy="285.22549"
+           r="3"
+           fill="#000000"
+           id="circle1591" />
+        <circle
+           cx="339.53152"
+           cy="115.30392"
+           r="3"
+           fill="#000000"
+           id="circle1593" />
+        <circle
+           cx="478.98199"
+           cy="72.823532"
+           r="3"
+           fill="#000000"
+           id="circle1595" />
+        <circle
+           cx="412.2883"
+           cy="327.70587"
+           r="3"
+           fill="#000000"
+           id="circle1597" />
+        <circle
+           cx="624.49548"
+           cy="260.95099"
+           r="3"
+           fill="#000000"
+           id="circle1599" />
+        <circle
+           cx="600.24323"
+           cy="78.892159"
+           r="3"
+           fill="#000000"
+           id="circle1601" />
+        <circle
+           cx="309.21622"
+           cy="103.16666"
+           r="3"
+           fill="#000000"
+           id="circle1603" />
+        <circle
+           cx="169.76576"
+           cy="600.79413"
+           r="3"
+           fill="#000000"
+           id="circle1605" />
+        <circle
+           cx="327.4054"
+           cy="54.617645"
+           r="3"
+           fill="#000000"
+           id="circle1607" />
+        <circle
+           cx="254.64865"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1609" />
+        <circle
+           cx="412.2883"
+           cy="109.23529"
+           r="3"
+           fill="#000000"
+           id="circle1611" />
+        <circle
+           cx="97.00901"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle1613" />
+        <circle
+           cx="151.57658"
+           cy="327.70587"
+           r="3"
+           fill="#000000"
+           id="circle1615" />
+        <circle
+           cx="345.5946"
+           cy="491.55884"
+           r="3"
+           fill="#000000"
+           id="circle1617" />
+        <circle
+           cx="412.2883"
+           cy="139.57843"
+           r="3"
+           fill="#000000"
+           id="circle1619" />
+        <circle
+           cx="266.77478"
+           cy="364.11765"
+           r="3"
+           fill="#000000"
+           id="circle1621" />
+        <circle
+           cx="291.02704"
+           cy="339.84314"
+           r="3"
+           fill="#000000"
+           id="circle1623" />
+        <circle
+           cx="230.39639"
+           cy="333.77451"
+           r="3"
+           fill="#000000"
+           id="circle1625" />
+        <circle
+           cx="175.82883"
+           cy="12.137255"
+           r="3"
+           fill="#000000"
+           id="circle1627" />
+        <circle
+           cx="303.15317"
+           cy="279.15686"
+           r="3"
+           fill="#000000"
+           id="circle1629" />
+        <circle
+           cx="72.75676"
+           cy="430.87256"
+           r="3"
+           fill="#000000"
+           id="circle1631" />
+        <circle
+           cx="357.72073"
+           cy="236.67647"
+           r="3"
+           fill="#000000"
+           id="circle1633" />
+        <circle
+           cx="424.41443"
+           cy="84.960785"
+           r="3"
+           fill="#000000"
+           id="circle1635" />
+        <circle
+           cx="545.67566"
+           cy="18.205883"
+           r="3"
+           fill="#000000"
+           id="circle1637" />
+        <circle
+           cx="66.693695"
+           cy="267.01962"
+           r="3"
+           fill="#000000"
+           id="circle1639" />
+        <circle
+           cx="212.20721"
+           cy="576.51959"
+           r="3"
+           fill="#000000"
+           id="circle1641" />
+        <circle
+           cx="90.945946"
+           cy="291.29413"
+           r="3"
+           fill="#000000"
+           id="circle1643" />
+        <circle
+           cx="133.38739"
+           cy="194.19608"
+           r="3"
+           fill="#000000"
+           id="circle1645" />
+      </g>
+      <rect
+         width="673"
+         height="619"
+         style="fill:none"
+         id="rect1649"
+         x="0"
+         y="0" />
+    </g>
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:10"
+       id="rect2026"
+       width="12.318673"
+       height="2.4331806"
+       x="197.80598"
+       y="88.464531" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:10"
+       id="path2152"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="73.148682"
+       sodipodi:cy="831.30267"
+       sodipodi:r1="23.964315"
+       sodipodi:r2="11.982158"
+       sodipodi:arg1="0"
+       sodipodi:arg2="1.0471976"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 97.112997,831.30267 -35.946473,20.75371 0,-41.50741 z"
+       transform="matrix(0.26458333,0,0,0.26458333,190.70199,-130.29808)"
+       inkscape:transform-center-x="-1.5851394"
+       inkscape:transform-center-y="-2.7710089e-06" />
+  </g>
+</svg>
