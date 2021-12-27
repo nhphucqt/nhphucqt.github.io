@@ -9,7 +9,7 @@ keywords: doc them, đọc thêm, more, builtin function, ham, hàm, bit
 * [`int __builtin_parity(unsigned int)`](#parity)
 * [`int __builtin_ctz(unsigned int)`](#ctz)
 * [`int __builtin_clz(unsigned int)`](#clz)
-    * [Ứng dụng của `__builtin_clz()`](#ung-dung-clz)
+    * [Ứng dụng của `__builtin_clz`](#ung-dung-clz)
 * [Nguồn tham khảo](#tham-khao)
 </div>
 
@@ -89,7 +89,7 @@ Ngoài ra còn có 2 hàm tương tự:
 * `int __builtin_clzl(unsigned long)`: tùy vào bộ dịch mà `long` dùng 32bit hoặc 64bit, đếm bắt đầu từ bit cao nhất (bit $$31$$ hoặc bit $$63$$), nếu $$x = 0$$ thì trả về $$32$$ hoặc $$64$$
 * `int __builtin_clzll(unsigned long long)`: đếm bắt đầu từ bit cao nhất (bit $$63$$), nếu $$x = 0$$ thì trả về $$64$$
 
-### Ứng dụng của `__builtin_clz()` {#ung-dung-clz}
+### Ứng dụng của `__builtin_clz` {#ung-dung-clz}
 
 #### Tính $$\lfloor log2(x) \rfloor$$
 * Đối với số 32bit: 
