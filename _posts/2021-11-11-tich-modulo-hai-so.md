@@ -318,6 +318,6 @@ uint64_t mul6(uint64_t a, uint64_t b, uint64_t m) {
 ## Nguồn tham khảo {#nguon-tham-khao}
 
 * [Câu hỏi trên Quora](https://www.quora.com/How-can-I-execute-A-*-B-mod-C-without-overflow-if-A-and-B-are-lesser-than-C)
-* [Integer overflow - cplusplus](http://www.cplusplus.com/articles/DE18T05o/)
+* [Integer overflow - cplusplus](https://www.cplusplus.com/articles/DE18T05o/)
 * [https://en.wikipedia.org/wiki/Two's_complement](https://en.wikipedia.org/wiki/Two's_complement)
 * [https://en.wikipedia.org/wiki/Integer_overflow](https://en.wikipedia.org/wiki/Integer_overflow)

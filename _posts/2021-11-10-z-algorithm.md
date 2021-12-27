@@ -1,5 +1,5 @@
 ---
-title: Z function
+title: Z algorithm
 category: xu-li-xau
 keywords: xau, xâu, string, ham, hàm, function, Z algorithm, Z funcion, mang tien to, mảng tiền tố, prefix array, hai con tro, hai con trỏ, two pointers, linear, tuyen tinh, tuyến tính
 ---
