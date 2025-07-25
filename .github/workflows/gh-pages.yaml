@@ -3,7 +3,7 @@ name: Deploy Hugo PaperMod Demo to Pages
 on:
   push:
     paths-ignore:
-      - "images/**"
+      - "images/**" 
       - "LICENSE"
       - "README.md"
     branches:
