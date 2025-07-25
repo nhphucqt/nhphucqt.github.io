@@ -95,6 +95,9 @@ params:
     - name: email
       title: Send Email
       url: "mailto:nhphuc222@apcs.fitus.edu.vn"
+    - name: orcid
+      title: ORCID
+      url: "https://orcid.org/0009-0000-2946-7956"
     - name: github
       title: View Source on Github
       url: "https://github.com/nhphucqt"
@@ -106,7 +109,7 @@ params:
       url: "/index.xml"
 
   editPost:
-    URL: "https://github.com/nhphucqt/nhphucqt.github.io/content"
+    URL: "https://github.com/nhphucqt/nhphucqt.github.io/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
