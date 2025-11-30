@@ -51,7 +51,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  author: ["Hoang-Phuc Nguyen"]
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -67,6 +67,9 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
+  TocOpen: true
+  math: true
+  draft: true
   # comments: false
   images: ["images/papermod-cover.png"]
 
@@ -85,10 +88,10 @@ params:
 
   homeInfoParams:
     Title: "nhphucqt's Blog"
-    Content: >
+    Content:
       👋 Welcome to my blog!
 
-      - I'm a passionate Computer Science student and research enthusiast specializing in Artificial Intelligence, Machine Learning, and Computer Vision. Currently, I'm part of the Software Engineering Laboratory (SELab) at the University of Science, VNU-HCM, where I work on deep learning projects.
+      I'm a passionate Computer Science student and research enthusiast specializing in Artificial Intelligence, Machine Learning, and Computer Vision. Currently, I'm part of the Software Engineering Laboratory (SELab) at the University of Science, VNU-HCM, where I work on deep learning projects.
 
 
   socialIcons:

@@ -4,15 +4,9 @@ author: ["Hoang-Phuc Nguyen"]
 date: 2025-11-30
 summary: "In this assignment, you will learn the basics of rendering with PyTorch3D, explore 3D representations, and practice constructing simple geometry."
 description: "In this assignment, you will learn the basics of rendering with PyTorch3D, explore 3D representations, and practice constructing simple geometry."
-
 tags: ["PyTorch3D", "Rendering", "3D", "Computer Vision", "Assignments", "CMU 16-825", "CMU"]
 series: ["CMU 16-825"]
 draft: false
-ShowToc: true
-TocOpen: true
-aliases: [/posts/cmu-16-825/assignments/assignment-1]
-math: true
-# weight: 1
 --- 
 
 # 1. Practicing with Cameras (15 Points)
