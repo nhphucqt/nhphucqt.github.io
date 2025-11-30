@@ -7,6 +7,7 @@ tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]
 series: ["Themes Guide"]
 aliases: ["migrate-from-jekyl"]
+draft: true
 cover:
   image: images/msg.png
   caption: "Generated using [OG Image Playground by Vercel](https://og-playground.vercel.app/)"
